@@ -25,22 +25,6 @@ document.addEventListener('DOMContentLoaded', function () {
         audio.play();
     }
 
-    document.addEventListener('keydown', function (event) {
-        const keyElement = document.querySelector(`.key[data-note="${event.key.toUpperCase()}"]`);
-        if (keyElement) {
-            playNote(keyElement.dataset.note);
-            keyElement.classList.add('active');
-            //    {second part of password: CAFF}
-        }
-    });
-
-    document.addEventListener('keyup', function (event) {
-        const keyElement = document.querySelector(`.key[data-note="${event.key.toUpperCase()}"]`);
-        if (keyElement) {
-            keyElement.classList.remove('active');
-        }
-    });
-
     piano.addEventListener('mousedown', function (event) {
         const keyElement = event.target.closest('.key');
         if (keyElement) {
