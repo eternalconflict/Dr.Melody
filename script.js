@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
+    // {second part of the password is : CAFF}
     const piano = document.querySelector('.piano');
     
     function createKey(keyClass, note) {
