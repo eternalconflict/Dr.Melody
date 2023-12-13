@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function generatePiano() {
-        const whiteKeys = ['F', 'D', 'E', 'A', 'G', 'B', 'C'];
+        const whiteKeys = ['alpha', 'beta', 'gamma', 'yeta', 'zeta', 'keta', 'reta'];
 
         whiteKeys.forEach(note => createWhiteKey(note));
     }
